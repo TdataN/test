@@ -180,20 +180,20 @@ function touchEnd( e ){
   if( motionData && motionData.length > 0 ){ 
     //. ƒOƒ‰ƒt•`‰æ 
     var labels = []; 
-    //var x_data_total = 0;
+    var x_data_total = 0;
     var x_data = []; 
-    //var y_data_total = 0;
+    var y_data_total = 0;
     var y_data = [];
     //var z_data = []; 
     for( var i = 0; i < motionData.length; i ++ ){ 
       var mot = motionData[i]; 
       labels.push( '' + i ); 
-      //x_data_total = x_data_total + mot['ac'].x;
-      //x_data.push( x_data_total );
-      x_data.push( mot['ac'].x );
-      //y_data_total = y_data_total + mot['ac'].y;
-      //y_data.push( y_data_total );
-      y_data.push( mot['ac'].y );
+      x_data_total = x_data_total + mot['ac'].x;
+      x_data.push( x_data_total );
+      //x_data.push( mot['ac'].x );
+      y_data_total = y_data_total + mot['ac'].y;
+      y_data.push( y_data_total );
+      /y_data.push( mot['ac'].y );
       //z_data.push( mot['ac'].z ); 
     } 
 
